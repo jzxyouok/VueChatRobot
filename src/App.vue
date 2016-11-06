@@ -1,16 +1,37 @@
 <template>
   <div id="app">
-    <hello></hello>
+    <el-row>
+      <el-col :span="6">
+        <Left />
+      </el-col>
+      <el-col :span="12">
+        <Middle />
+      </el-col>
+      <el-col :span="6">
+        
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Left from './components/Left'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Left
   }
 }
 </script>
+
+<style scoped>
+#app {
+  padding: 50px;
+  text-align: center;
+}
+
+div {
+  border: solid red 1px;
+}
+</style>
